@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Access</title>
+</head>
+<body>
+    <h1>Wi-Fi Access</h1>
+    <form id="captivePortalForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+        <select name="country_code" required>
+            <option value="+1">USA (+1)</option>
+            <option value="+44">UK (+44)</option>
+            <option value="+91">India (+91)</option>
+            <!-- Add more country codes as needed -->
+        </select>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" name="nationality" placeholder="Nationality" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('captivePortalForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Handle form submission (e.g., send data to server)
+        });
+    </script>
+</body>
+</html>
